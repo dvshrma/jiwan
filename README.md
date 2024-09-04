@@ -1,2 +1,3 @@
 # jiwan
-jiwan stands for joint initiative for wetland advancements and nurturing
+JIWAN or Joint Initiative for Wetland Advancements and Nurturing
+
