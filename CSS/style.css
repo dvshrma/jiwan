@@ -1,21 +1,26 @@
 body{
-    background-color:#FFE4E1;
+    background-color:#000000;
   }
   
+h1{
+
+}
+
   header{
     font-family:Roboto;
     font-size:26px;
-    colour:black;
+    color:rgb(0, 185, 218);
     font-weight:bold;
     text-align:center;
     margin-top:20px;
     margin-bottom:20px;
   }
+
   
   #survey-form{
     background-color:#FFFFFF;
     font-family:Quicksand;
-    max-width:70%;
+    max-width:95%;
     margin:auto;
     padding:0;
     border-radius:15px;
@@ -36,7 +41,7 @@ body{
   
   .sub-group{
     position:relative;
-    right:30px;
+    right:10px;
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
@@ -44,14 +49,14 @@ body{
   }
   
   label.left{
-    width:30%;
-    padding-right:4%;
-    text-align:right;
+    width:35%;
+    padding-right:5%;
+    text-align:left;
   }
   
   
   .right{
-    width:30%;
+    width:40%;
   }
   
   .input-field{
@@ -99,17 +104,17 @@ body{
   }
   
   #submit{
-    background:#FFE4E1;
+    background:#63a3f6;
     font-family:Roboto;
-    border-radius:4px;
-    font-size:23px;
+    border-radius:.8rem;
+    font-size:2rem;
   }
   
   label:hover{
     cursor:pointer;
   }
   
-  @media (max-width: 800px) {
+  /* @media (max-width: 800px) {
     body {
       font-size: 12px;
     }
@@ -119,15 +124,20 @@ body{
     body {
       font-size: 9px;
     }
-  }
+  } */
 
 
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 580px) {
     .container {
-        padding: 10px;
+        padding: 0.5rem;
+      
     }
 
-    .header {
+    body{
+        font-size: 10px;
+    }
+
+    #header {
         padding: 10px;
         font-size: 18px;
     }
@@ -156,8 +166,8 @@ body{
 
     /* Buttons */
     button {
-        width: 100%;
+        width: 80%;
         padding: 10px;
-        font-size: 16px;
+        font-size: 12px;
     }
 }

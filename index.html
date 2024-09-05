@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Survey Form</title>
+    <title>JIWAN</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
@@ -11,82 +11,127 @@
   <body>
   <header>
   <div id="title"><h1>JIWAN</h1>
+    <h2 class="jiwan">(Joint Initiative for Wetland Advancement and Nuturing)</h2></div>
     </header>
 
 <form id="survey-form">
 
-  <div id="description"> Let us know how we can improve our service</div><br>
+  <div id="description">Fill the survey & Report your Issue </div><br>
 
-  <fieldset class="fieldset">
-
+<fieldset class="fieldset">
     <div class="sub-group">
-      <label class="left" id="name-label" for="name">*Name:</label>
-    <input type="text" name="customer-name" class="right input-field" id="name" placeholder="Enter your name" required>
+        <label class="left">
+            Have you noticed this problem before, or is it new?</label>
+        <ul style="list-style: none;" class="right">
+
+            <li class="checkbox"><label><input type="radio" name="game" value="First Time Noticing">First Time
+                    Noticing</label></li>
+            <li class="checkbox"><label><input type="radio" name="game" value="Occurred Occasionally">Occurred
+                    Occasionally</label></li>
+            <li class="checkbox"><label><input type="radio" name="game" value="Persistent Issue">Persistent Issue<label>
+            </li>
+
+        </ul>
     </div>
+</fieldset>
 
+
+<fieldset class="fieldset">
     <div class="sub-group">
-      <label class="left" id="email-label" for="email">*Email:</label>
-    <input type="email" name="Email-address" class="right input-field" placeholder="Enter your email" id="email" required>
+        <label class="left" id="left-radio">How would you rate the accessibility to this water body?</label>
+
+        <ul style="list-style: none" class="right">
+            <li class="radio"><label><input name="radio-buttons" value="1" type="radio"
+                        class="recommendation">Easily Accessible</label></li>
+            <li class="radio"><label><input name="radio-buttons" value="2" type="radio"
+                        class="recommendation">Moderately Accessible</label></li>
+            <li class="radio"><label><input name="radio-buttons" value="3" type="radio"
+                        class="recommendation">Difficult to Access</label></li>
+            <li class="radio"><label><input name="radio-buttons" value="3" type="radio"
+                            class="recommendation">Not Accessible at All</label></li>
+        </ul>
     </div>
+</fieldset>
 
+<fieldset class="fieldset">
     <div class="sub-group">
-      <label  class="left" id="number-label" for="number">*Age:</label>
-    <input type="number" name="Age" placeholder="Age" min="1" max="100" class="right input-field" id="number">
-  </div>
+        <label class="left" id="left-radio">Is there any noticeable wildlife affected by the condition of the water  body?</label>
 
-    <div class="sub-group">
-      <label class="left" id="handphone-label" for="handphone">*Handphone:</label>
-
-    <input type="text" placeholder="Phone Number" class="right input-field" id="handphone">
-  </div>
-
-    <div class="sub-group">
-      <label class="left" for="dropdown">*First time playing Escape Room?</label>
-
-      <select class="right dropdown" id="dropdown" name="dropdown">
-        <option selected disabled>Select an option</option>
-        <option value="first">First-Timer</option>
-        <option value="never">Never Play Before</option>
-      </select>
+        <ul style="list-style: none" class="right">
+            <li class="radio"><label><input name="radio-buttons" value="1" type="radio"
+                        class="recommendation">Yes</label></li>
+            <li class="radio"><label><input name="radio-buttons" value="2" type="radio"
+                        class="recommendation">No</label></li>
+            <li class="radio"><label><input name="radio-buttons" value="3" type="radio"
+                        class="recommendation">Not Sure</label></li>
+        </ul>
     </div>
-  </fieldset>
+</fieldset>
 
-  <fieldset class="fieldset">
-<div class="sub-group">
-<label class="left">
-  *Which game you played?</label>
 
- <ul style="list-style: none;" class="right">
+<fieldset class="fieldset">
+    <div class="sub-group">
+        <label class="left">
+            What issue did you observe at the water body?</label>
+        <ul style="list-style: none;" class="right">
 
-   <li class="checkbox"><label><input type="checkbox" name="game" value="exodus" >Exodus</label></li>
-     <li class="checkbox"><label><input type="checkbox" name="game" value="alcatraz">Alcatraz</label></li>
-     <li class="checkbox"><label><input type="checkbox" name="game" value="aokigahara" >Aokigahara<label></li>
-     <li class="checkbox"><label><input type="checkbox" name="game" value="mausoleum" >Mausoleum</label></li>
-     <li class="checkbox"><label><input type="checkbox" name="game" value="castiglione" >Castiglione</label></li>
-       </ul></div></fieldset>
+            <li class="checkbox"><label><input type="checkbox" name="game" value="Littering">Littering</label></li>
+            <li class="checkbox"><label><input type="checkbox" name="game" value="Foul Odor">Foul Odor</label></li>
+            <li class="checkbox"><label><input type="checkbox" name="game" value="Water Level Decline">Water Level Decline<label></li>
+            <li class="checkbox"><label><input type="checkbox" name="game" value="Algae Growth">Algae Growth</label></li>
+            <li class="checkbox"><label><input type="checkbox" name="game" value="Dead Fishes">Dead Fishes</label></li>
+        </ul>
+    </div>
+</fieldset>
+
+<fieldset class="fieldset">
+
+    <div class="sub-group">
+        <label class="left" for="dropdown">Select the issue you want to Report</label>
+
+        <select class="right dropdown" id="dropdown" name="dropdown">
+            <option selected disabled>Select an option</option>
+            <option value="Trash/Litter">Trash/Litter</option>
+            <option value="Water Level Drop">Water Level Drop</option>
+            <option value="Dead Fish/Wildlife">Dead Fish/Wildlife</option>
+            <option value="Illegal Waste Dump">Illegal Waste Dump</option>
+            <option value="Clogged Drains">Clogged Drains</option>
+            <option value="Unpleasant Foam">Unpleasant Foam</option>
+            <option value="Erosion">Erosion</option>
+        </select>
+    </div>
+</fieldset>
+
+
 
     <fieldset class="fieldset">
-  <div class="sub-group">
-  <label class="left" id="left-radio">Will you recommend the game to your friends?</label>
+        <h2>Explain the problem briefly</h2>
+    
+        <div class="commentbox">
+    
+            <textarea rows="4" placeholder="Explain the issue in 30 to 250 words..."></textarea>
+    
+            <br>
+    
+            <!-- <button id="submit" type="submit">Submit</button> -->
+        </div>
+    </fieldset>
 
-   <ul style="list-style: none" class="right">
-       <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
-       <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
-       <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
-   </ul>
-  </div></fieldset>
+    
+    <fieldset class="fieldset">
+        <h2>Propose your solution (Optional) </h2>
+    
+        <div class="commentbox">
+    
+            <textarea rows="4" placeholder="Explain the solution in 30 to 250 words..."></textarea>
+    
+            <br></br><br>
+    
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </fieldset>
 
-     <fieldset class="fieldset">
-   <h2>Any comments or suggestions?</h2>
 
-    <div class="commentbox">
-
-   <textarea rows="4"  placeholder="Enter your comment here..."></textarea>
-
-   <br></br>
-
-  <button id="submit" type="submit">Submit</button>
-       </div></fieldset>
 </form>
 </div>
   </body>
